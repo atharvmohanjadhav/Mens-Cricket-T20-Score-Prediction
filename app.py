@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import pandas as pd
 import numpy as np
-df = pd.read_csv(r"C:\Users\athar\Downloads\T20 International Dataset.csv")
+df = pd.read_csv(r"T20 International Dataset.csv")
 df.drop(columns=["Unnamed: 0","powerPlay","AverageScore","innings"],inplace=True)
 
 x = df.iloc[:,:-1]
